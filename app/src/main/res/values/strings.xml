@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">android-lab9</string>
+    <string name="lang_b">LANG_B</string>
+    <string name="filter_tv">FILTER_TV</string>
+    <string name="listview_item1">LISTVIEW_ITEM1</string>
+    <string name="listview_item2">LISTVIEW_ITEM2</string>
+    <string name="listview_item3">LISTVIEW_ITEM3</string>
+    <string name="filter_item0">FILTER_ITEM0</string>
+    <string name="filter_item1">FILTER_ITEM1</string>
+    <string name="filter_item2">FILTER_ITEM2</string>
+    <string name="filter_item3">FILTER_ITEM3</string>
+    <string name="recipe1">RECIPE1</string>
+    <string name="recipe2">RECIPE2</string>
+    <string name="recipe3">RECIPE3</string>
+</resources>

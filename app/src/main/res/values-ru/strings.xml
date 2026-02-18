@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">android-lab9</string>
+    <string name="lang_b">RU</string>
+    <string name="filter_tv">Фильтр:</string>
+    <string name="listview_item3">Фаршированные грибы шампиньоны</string>
+    <string name="filter_item0">Все</string>
+    <string name="filter_item1">Завтрак</string>
+    <string name="filter_item2">Обед</string>
+    <string name="filter_item3">Ужин</string>
+    <string name="listview_item1">Омлет с сыром и зеленью</string>
+    <string name="listview_item2">Куриная грудка с овощами гриль</string>
+    <string name="recipe1">Ингредиенты: яйца, сыр, зелень, соль, перец, сливочное масло.Приготовление: Взбейте яйца, добавьте тертый сыр и мелко нарезанную зелень. Обжаривайте смесь на разогретом масле около 3–5 минут до готовности омлета.</string>
+    <string name="recipe2">Ингредиенты: куриная грудка, овощи (баклажаны, кабачки), оливковое масло, специи.Приготовление: Запеките куриную грудку с предварительно обжаренными на гриле овощами. Полейте блюдо маслом и специями.</string>
+    <string name="recipe3">Ингредиенты: шампиньоны, фарш мясной, лук, сметана, сыр.Приготовление: Удалите ножки грибов, начините шляпки смесью фарша и лука, запекайте около 15 минут. Затем выложите поверх грибов немного сметаны и натрите сыр.</string>
+</resources>

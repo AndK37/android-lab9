@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">android-lab9</string>
+    <string name="lang_b">PL</string>
+    <string name="filter_tv">Filtr:</string>
+    <string name="listview_item3">Grzyby szampiniony nadziewane</string>
+    <string name="filter_item0">Wszystko</string>
+    <string name="filter_item1">Śniadanie</string>
+    <string name="filter_item2">Obiad</string>
+    <string name="filter_item3">Kolacja</string>
+    <string name="listview_item1">Jajecznica z serem i ziołami</string>
+    <string name="listview_item2">Pieczona piersi kurczaka z warzywami grillowanymi</string>
+    <string name="recipe1">Składniki: jaja, ser, ziele, sól, pieprz, masło.Przygotowanie: Utrzyj jaja, dodaj posiekane zioła i utartego sera. Usmaż na rozgrzanym masle przez około 3-5 minut do gotowania jajecznicy.</string>
+    <string name="recipe2">Składniki: piersi kurczaka, warzywa (bakłażany, kabaćki), oliwa z oliwek, przyprawy.Przygotowanie: Upiecz piersi kurczaka razem z wcześniej grillowanymi warzywami. Polej oliwą i posól przyprawami.</string>
+    <string name="recipe3">Składniki: grzyby szampiniony, mięso mięsne, cebula, smetana, ser.Przygotowanie: Usuń nóżki grzybów, nadziewaj kapcie mieszaniną z mięsa i cebuli, piecz przez około 15 minut. Potem rozprowadź smetanę na powierzchni i posyp skrobiennym serem.</string>
+</resources>
