@@ -13,4 +13,7 @@
     <string name="recipe1">Składniki: jaja, ser, ziele, sól, pieprz, masło.Przygotowanie: Utrzyj jaja, dodaj posiekane zioła i utartego sera. Usmaż na rozgrzanym masle przez około 3-5 minut do gotowania jajecznicy.</string>
     <string name="recipe2">Składniki: piersi kurczaka, warzywa (bakłażany, kabaćki), oliwa z oliwek, przyprawy.Przygotowanie: Upiecz piersi kurczaka razem z wcześniej grillowanymi warzywami. Polej oliwą i posól przyprawami.</string>
     <string name="recipe3">Składniki: grzyby szampiniony, mięso mięsne, cebula, smetana, ser.Przygotowanie: Usuń nóżki grzybów, nadziewaj kapcie mieszaniną z mięsa i cebuli, piecz przez około 15 minut. Potem rozprowadź smetanę na powierzchni i posyp skrobiennym serem.</string>
+    <string name="play_b">Odtwórz dźwięk</string>
+    <string name="reset_b">Nowo</string>
+    <string name="pause_b">Pauza</string>
 </resources>

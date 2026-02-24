@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private Spinner typeS;
     private ListView mainLV;
     private Button langB;
+    private MediaPlayer musicMP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,21 @@ public class MainActivity extends AppCompatActivity {
         ActivityResultLauncher<Intent> startActivity = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
             recreate();
         });
+
+        Global g = Global.getInstance();
+        if (g.isStartup) {
+            musicMP = MediaPlayer.create(this, R.raw.startup);
+            musicMP.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    musicMP.stop();
+                    g.isStartup = false;
+                }
+            });
+            musicMP.start();
+        }
+
+
 
         langB = findViewById(R.id.langB);
         langB.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
                         mainLV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                playClickSound();
                                 switch (position) {
                                     case 0:
                                         startActivity.launch(new Intent(MainActivity.this, RecipeActivity.class)
@@ -109,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
                         mainLV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                playClickSound();
                                 switch (position) {
                                     case 0:
                                         startActivity.launch(new Intent(MainActivity.this, RecipeActivity.class)
@@ -126,6 +145,8 @@ public class MainActivity extends AppCompatActivity {
                         mainLV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                playClickSound();
+                                musicMP.start();
                                 switch (position) {
                                     case 0:
                                         startActivity.launch(new Intent(MainActivity.this, RecipeActivity.class)
@@ -143,6 +164,7 @@ public class MainActivity extends AppCompatActivity {
                         mainLV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                playClickSound();
                                 switch (position) {
                                     case 0:
                                         startActivity.launch(new Intent(MainActivity.this, RecipeActivity.class)
@@ -171,5 +193,16 @@ public class MainActivity extends AppCompatActivity {
         Configuration config = resources.getConfiguration();
         config.setLocale(locale);
         resources.updateConfiguration(config, resources.getDisplayMetrics());
+    }
+
+    public void playClickSound() {
+        MediaPlayer musicMP = MediaPlayer.create(MainActivity.this, R.raw.click);
+        musicMP.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                musicMP.stop();
+            }
+        });
+        musicMP.start();
     }
 }

@@ -12,4 +12,7 @@
     <string name="recipe1">RECIPE1</string>
     <string name="recipe2">RECIPE2</string>
     <string name="recipe3">RECIPE3</string>
+    <string name="play_b">PLAY_B</string>
+    <string name="reset_b">RESET_B</string>
+    <string name="pause_b">PAUSE_B</string>
 </resources>

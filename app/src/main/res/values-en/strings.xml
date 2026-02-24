@@ -13,4 +13,7 @@
     <string name="recipe1">"Ingredients: eggs, cheese, herbs, salt, pepper, butter.Preparation: Beat the eggs, add grated cheese and finely chopped herbs. Fry on heated butter for about 3-5 minutes until omelette is ready. "</string>
     <string name="recipe2">Ingredients: chicken breast, vegetables (eggplant, zucchini), olive oil, spices.Preparation: Bake chicken breast together with pre-grilled vegetables. Drizzle with olive oil and seasonings.</string>
     <string name="recipe3">Ingredients: mushrooms, ground meat, onion, sour cream, cheese.Preparation: Remove stems from mushrooms, fill caps with mixture of ground meat and onions, bake for about 15 minutes. Then spread sour cream on top and sprinkle with grated cheese.</string>
+    <string name="play_b">Play</string>
+    <string name="reset_b">Reset</string>
+    <string name="pause_b">Pause</string>
 </resources>
