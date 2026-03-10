@@ -100,7 +100,7 @@ public class RecipeActivity extends AppCompatActivity {
                     timer1 = new CountDownTimer((m * 60 + s) * 1000, 1000) {
                         @Override
                         public void onFinish() {
-                            timerTV1.setText("00:00");
+                            timerTV1.setText("07:00");
                             timerMP = MediaPlayer.create(RecipeActivity.this, R.raw.timer1);
                             timerMP.start();
 
@@ -167,7 +167,7 @@ public class RecipeActivity extends AppCompatActivity {
                     timer2 = new CountDownTimer((m * 60 + s) * 1000, 1000) {
                         @Override
                         public void onFinish() {
-                            timerTV2.setText("00:00");
+                            timerTV2.setText("15:00");
                             timerMP = MediaPlayer.create(RecipeActivity.this, R.raw.timer2);
                             timerMP.start();
 
@@ -240,6 +240,8 @@ public class RecipeActivity extends AppCompatActivity {
                     timer3 = new CountDownTimer((m * 60 + s) * 1000, 1000) {
                         @Override
                         public void onFinish() {
+                            timer3ET1.setText(timer3min);
+                            timer3ET2.setText(timer3sec);
                             timerMP = MediaPlayer.create(RecipeActivity.this, R.raw.timer3);
                             timerMP.start();
 
